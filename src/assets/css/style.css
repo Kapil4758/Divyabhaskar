@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* #02395a Blue */
+/* #e31e25 Red */
+
+body { background-color: #FFFFFF !important; }
+
+.navbar { background-color: #e31e25; margin: 0 0 30px; }
+.navbar .container-fluid { padding: 0 30px; }
+.navbar .navbar-collapse ul li { font-family: 'Baloo Bhai 2', cursive; font-size: 18px; margin: 0 30px 0 0; color: #FFFFFF; transition: all 0.3s ease-in-out; }
+.navbar .navbar-collapse ul li:hover { color: #02395a; }
+.navbar .navbar-collapse ul li:last-child { margin: 0 0 0 0; }
+.navbar .navbar-collapse ul li a { font-family: 'Baloo Bhai 2', cursive; font-size: 18px; color: #FFFFFF; text-decoration: none; transition: all 0.3s ease-in-out; }
+.navbar .navbar-collapse ul li a:hover { color: #02395a; }
+
+.news-content { display: flex; flex-wrap: wrap; }
+/* .news-content .right-sidebar { display: none; }
+.news-content .left-sidebar { display: none; } */
+.news-content .categorylist { padding: 0; list-style: none; }
+.news-content .categorylist li a { color: transparent; }
+.news-content .categorylist li button { display: block; position: relative; height: 50px; width: 210px; margin: 0 auto 10px; font-family: 'Baloo Bhai 2', cursive; font-size: 20px; font-weight: 700; letter-spacing: 1px; border-radius: 5px; text-transform: uppercase; border: 2px solid #02395a; color: #e31e25; outline: none; cursor: pointer; background: transparent; overflow: hidden; transition: 0.6s; }
+.news-content .categorylist li button::before { width: 40px; background: rgba(255,255,255,0.6); transform: translateX(-130px) skewX(-45deg); }
+.news-content .categorylist li button::after { width: 20px; background: rgba(255,255,255,0.6); transform: translateX(-130px) skewX(-45deg); }
+.news-content .categorylist li button::before, .news-content .categorylist li button::after { position: absolute; content: ''; left: 0; top: 0; height: 100%; filter: blur(30px); opacity: 0.4; transition: 0.6s; }
+.news-content .categorylist li button:hover { color: #ffffff; background-color: #02395a; }
+.news-content .categorylist li button:hover::before, .news-content .categorylist li button:hover::after { opacity: 0.6; transform: translateX(320px) skewX(-45deg); }
+
+.news-content .category-news a { text-decoration: none; }
+.news-content .category-news a:first-child .news-post h1 { width: 100%; margin: 0 0 15px; }
+.news-content .category-news a .news-post h1  { font-size: 18px; font-weight: 600; line-height: 1.5; color: #02395a; width: calc(100% - 220px); margin: 0; }
+.news-content .category-news a .news-post h1 span { color: #e31e25; }
+.news-content .category-news a .news-post img { display: inline-block; width: 200px; }
+.news-content .category-news a:first-child .news-post img { display: block; margin: 0 auto; width: 100%; }
+.news-content .category-news a:first-child .news-post { display: block; }
+.news-content .category-news a .news-post { border: 1px solid rgba(8, 8, 8, 0.1); padding: 20px; margin: 0 30px 20px; border-radius: 10px; transition: all 0.3s ease-in-out; display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; }
+.news-content .category-news .news-post:hover { background-color: rgba(8, 8, 8, 0.08); border: 1px solid rgba(8, 8, 8, 0.2); }
+.news-content .category-news .news-post h4 { font-family: 'Baloo Bhai 2', cursive; font-size: 18px; font-weight: 600; color: #02395a; line-height: 1.3; margin: 0 20px 0 0; width: calc(60% - 20px); }
+.news-content .category-news .news-post:first-child h4 { width: 100%; margin: 0 0 15px; font-size: 22px; line-height: 1.5; }
+.news-content .category-news .news-post h4 span { color: #e31e25; }
+.news-content .category-news .news-post:first-child video { width: 100%; height: 400px; }
+.news-content .category-news .news-post video { width: 40%; height: 150px; }
+
+.news-content .category-news .news-post { border: 1px solid rgba(8, 8, 8, 0.1); padding: 20px; margin: 0 30px 20px; border-radius: 10px; }
+.news-content .category-news .news-post h1 { font-size: 18px; font-weight: 600; line-height: 1.5; color: #02395a; width: 100%; margin: 0 0 15px; }
+.news-content .category-news .news-post h1 span { color: #e31e25; }
+.news-content .category-news .news-post img { display: block; width: 100%; margin: 0 0 30px; }
+.news-content .category-news .news-post div { overflow: hidden; }
+
+.search-box { padding: 0; }
+.search-box .modal-dialog { max-width: 100%; width: 100%; margin: 0; }
+.search-box .modal-dialog .modal-content { height: 100vh; border-radius: 0; background-color: rgba(0, 0, 0, 0.95); border: none; }
+.search-box .modal-dialog .modal-content .modal-header { padding: 30px; border: 0; }
+.search-box .modal-dialog .modal-content .modal-header .btn-close { padding: 0; width: 20px; height: 20px; background-image: url("../images/close.png"); opacity: 1; }
+
+.search-box .modal-dialog .modal-content .modal-body { padding: 0 150px; }
+.search-box .modal-dialog .modal-content .modal-body .search-box { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; }
+.search-box .modal-dialog .modal-content .modal-body .search-box .search-btn { width: 100px; }
+.search-box .modal-dialog .modal-content .modal-body .search-box .search-input-icon { position: relative; width: calc(100% - 130px); margin: 0 30px 0 0; }
+.search-box .modal-dialog .modal-content .modal-body .search-box .search-input-icon .search-bar { background-color: transparent; border-radius: 0; border: none; border-bottom: 1px solid #FFF; padding: 10px 50px; line-height: 1; color: #FFF; }
+.search-box .modal-dialog .modal-content .modal-body .search-box .search-bar:focus { box-shadow: none; }
+.search-box .modal-dialog .modal-content .modal-body .search-box .search-icon { position: absolute; top: 50%; left: 0; transform: translateY(-50%); font-size: 20px; }
+.search-box .modal-dialog .modal-content .modal-body .search-box .search-icon path { fill: rgba(255, 255, 255, 0.6); }
+
+.search-box .modal-dialog .modal-content .modal-body .search-category { padding: 50px 0 0; list-style: none; display: flex; flex-wrap: wrap; align-items: center; }
+.search-box .modal-dialog .modal-content .modal-body .search-category li { font-family: 'Baloo Bhai 2', cursive; font-weight: 600; font-size: 20px; line-height: 1; color: #FFF; padding: 12px 20px 10px; border: 2px solid rgba(255, 255, 255, 0.5); border-radius: 30px; margin: 10px; transition: all 0.3s ease-in-out; }
+.search-box .modal-dialog .modal-content .modal-body .search-category li:hover { color: #FFF; border: 2px solid #02395a; background-color: #02395a; }
